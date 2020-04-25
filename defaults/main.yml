@@ -1,0 +1,4 @@
+---
+innodb_strict_mode: 0
+character_set_server: utf8
+default_character_set: utf8

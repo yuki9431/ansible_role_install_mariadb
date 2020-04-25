@@ -9,4 +9,7 @@
       - mariadb
       - mariadb-server
   notify:
+    - conf_innodb_strict_mode
+    - conf_character_server
+    - conf_character_client
     - restart_mariadb
