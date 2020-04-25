@@ -10,9 +10,11 @@ MariaDBのインストールと起動(enable)を行う
 CentOS 7.6.1810
 
 ## 変数
-innodb_strict_mode    # テーブルの追加のエラー検査を行うか
-character_set_server  # サーバのデフォルト文字コード
-default_character_set # クラウイアンのデフォルト文字コード
+```
+innodb_strict_mode    # テーブルの追加のエラー検査を行うか  
+character_set_server  # サーバのデフォルト文字コード  
+default_character_set # クラウイアンのデフォルト文字コード  
+```
 
 ## 依存関係
 なし
