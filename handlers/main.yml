@@ -1,14 +1,14 @@
 ---
 - name: conf_innodb_strict_mode
   lineinfile:
-    path: /etc/my.cnf.d/mariadb-server.cnf
+    path: /etc/my.cnf.d/server.cnf
     regexp: '^innodb_strict_mode'
     insertafter: '^[mysqld]'
     line: innodb_strict_mode={{ innodb_strict_mode }}
 
 - name: conf_character_server
   lineinfile:
-    path: /etc/my.cnf.d/mariadb-server.cnf
+    path: /etc/my.cnf.d/server.cnf
     regexp: '^character-set-server'
     insertafter: '^[mysqld]'
     line: character-set-server={{ character_set_server }}
