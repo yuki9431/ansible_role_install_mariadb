@@ -4,7 +4,7 @@
   lineinfile:
     path: /etc/my.cnf.d/server.cnf
     regexp: '^innodb_strict_mode'
-    insertafter: '^[mysqld]'
+    insertafter: '^\[mysqld\]'
     line: innodb_strict_mode={{ innodb_strict_mode }}
 
 - name: conf_character_server
@@ -12,7 +12,7 @@
   lineinfile:
     path: /etc/my.cnf.d/server.cnf
     regexp: '^character-set-server'
-    insertafter: '^[mysqld]'
+    insertafter: '^\[mysqld\]'
     line: character-set-server={{ character_set_server }}
 
 - name: conf_character_client
@@ -20,7 +20,7 @@
   lineinfile:
     path: /etc/my.cnf.d/client.cnf
     regexp: '^default-character-set'
-    insertafter: '^[client]'
+    insertafter: '^\[client\]'
     line: default-character-set={{ default_character_set }}
 
 - name: restart_mariadb
