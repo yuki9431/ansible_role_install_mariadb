@@ -18,3 +18,6 @@ default_character_set # クラウイアンのデフォルト文字コード
 
 ## 依存関係
 なし
+
+## Author
+[Dillen H. Tomida](https://twitter.com/t0mihir0)
